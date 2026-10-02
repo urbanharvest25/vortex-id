@@ -50,24 +50,28 @@ export function extractToken(req: Request): string | null {
   return null;
 }
 
-export function requireAuth(req: AuthRequest, res: Response, next: NextFunction) {
-  const token = extractToken(req);
-  if (!token) {
-    return res.status(401).json({ error: 'Silakan login terlebih dahulu untuk melanjutkan.' });
-  }
+export async function requireAuth(req: AuthRequest, res: Response, next: NextFunction) {
+  try {
+    const token = extractToken(req);
+    if (!token) {
+      return res.status(401).json({ error: 'Silakan login terlebih dahulu untuk melanjutkan.' });
+    }
 
-  const decoded = verifyToken(token);
-  if (!decoded || !decoded.id) {
-    return res.status(401).json({ error: 'Sesi login telah kedaluwarsa atau tidak valid.' });
-  }
+    const decoded = verifyToken(token);
+    if (!decoded || !decoded.id) {
+      return res.status(401).json({ error: 'Sesi login telah kedaluwarsa atau tidak valid.' });
+    }
 
-  const user = db.findUserById(decoded.id);
-  if (!user || user.status === 'BANNED') {
-    return res.status(403).json({ error: 'Akun Anda tidak ditemukan atau telah dinonaktifkan.' });
-  }
+    const user = await db.findUserById(decoded.id);
+    if (!user || user.status === 'BANNED') {
+      return res.status(403).json({ error: 'Akun Anda tidak ditemukan atau telah dinonaktifkan.' });
+    }
 
-  req.user = user;
-  next();
+    req.user = user;
+    next();
+  } catch (err: any) {
+    return res.status(500).json({ error: 'Terjadi kesalahan saat memverifikasi sesi.' });
+  }
 }
 
 export function requireAdmin(req: AuthRequest, res: Response, next: NextFunction) {
@@ -81,16 +85,20 @@ export function requireAdmin(req: AuthRequest, res: Response, next: NextFunction
   });
 }
 
-export function optionalAuth(req: AuthRequest, res: Response, next: NextFunction) {
-  const token = extractToken(req);
-  if (token) {
-    const decoded = verifyToken(token);
-    if (decoded && decoded.id) {
-      const user = db.findUserById(decoded.id);
-      if (user && user.status !== 'BANNED') {
-        req.user = user;
+export async function optionalAuth(req: AuthRequest, res: Response, next: NextFunction) {
+  try {
+    const token = extractToken(req);
+    if (token) {
+      const decoded = verifyToken(token);
+      if (decoded && decoded.id) {
+        const user = await db.findUserById(decoded.id);
+        if (user && user.status !== 'BANNED') {
+          req.user = user;
+        }
       }
     }
+    next();
+  } catch {
+    next();
   }
-  next();
 }

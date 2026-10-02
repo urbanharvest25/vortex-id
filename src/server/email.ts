@@ -30,7 +30,7 @@ export async function sendEmailWithResend(
   if (!configured) {
     const errorMsg =
       'Email provider belum dikonfigurasi di environment variable (EMAIL_API_KEY masih kosong).';
-    db.logEmail(to, subject, 'FAILED', errorMsg, orderId);
+    await db.logEmail(to, subject, 'FAILED', errorMsg, orderId);
     return {
       success: false,
       status: 'FAILED',
@@ -55,16 +55,16 @@ export async function sendEmailWithResend(
 
     const resData = (await res.json()) as any;
     if (res.ok && resData.id) {
-      db.logEmail(to, subject, 'SENT', undefined, orderId);
+      await db.logEmail(to, subject, 'SENT', undefined, orderId);
       return { success: true, status: 'SENT', messageId: resData.id };
     } else {
       const errMsg = resData.message || res.statusText || 'Gagal mengirim email via Resend API';
-      db.logEmail(to, subject, 'FAILED', errMsg, orderId);
+      await db.logEmail(to, subject, 'FAILED', errMsg, orderId);
       return { success: false, status: 'FAILED', error: errMsg };
     }
   } catch (err: any) {
     const errorMsg = err.message || 'Terjadi kesalahan jaringan saat mengirim email via Resend';
-    db.logEmail(to, subject, 'FAILED', errorMsg, orderId);
+    await db.logEmail(to, subject, 'FAILED', errorMsg, orderId);
     return { success: false, status: 'FAILED', error: errorMsg };
   }
 }

@@ -16,7 +16,7 @@ async function startServer() {
   const PORT = process.env.PORT || 3000;
 
   // Initialize DB instance
-  db.init();
+  await db.init();
 
   // Middleware configurations
   app.use(express.json({ limit: '15mb' }));
