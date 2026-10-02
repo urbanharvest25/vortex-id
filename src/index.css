@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, .no-print {
+    display: none !important;
+  }
+  #invoice-print-area {
+    border: none !important;
+    box-shadow: none !important;
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+  }
+  #invoice-print-area * {
+    color: black !important;
+    border-color: #cbd5e1 !important;
+  }
+}

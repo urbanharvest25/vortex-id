@@ -1,0 +1,713 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "name": "Super Admin Vortex",
+      "email": "nocturnalengine08@gmail.com",
+      "password_hash": "$2b$10$sQLY.bsVHCaMgdcT2PMJq.Jnp3.XcTAbM.HeCALVaNGcSXAklUC22",
+      "phone": "085819822250",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "created_at": "2026-10-02T09:24:11.190Z",
+      "updated_at": "2026-10-02T09:24:11.190Z"
+    },
+    {
+      "id": "usr-cust-01",
+      "name": "Rian Pratama",
+      "email": "customer@vortex.id",
+      "password_hash": "$2b$10$Sf.Uiqn2aPQSWrSmB/KLBuUq5t46HQk3ITEiFcIJiUaQ/hNin.HwK",
+      "phone": "081234567890",
+      "role": "CUSTOMER",
+      "status": "ACTIVE",
+      "created_at": "2026-10-02T09:24:11.290Z",
+      "updated_at": "2026-10-02T09:24:11.290Z"
+    },
+    {
+      "name": "Test Customer",
+      "email": "cust_test_1790944657@mail.com",
+      "password_hash": "$2b$10$/vPaP06PU5oIt0bKo7DwU.AVOHa/1.s2Yv8DgbzTZ1.htkhKLVVhi",
+      "phone": "081234567890",
+      "role": "CUSTOMER",
+      "status": "ACTIVE",
+      "id": "usr-1790944657485-f9wl8",
+      "created_at": "2026-10-02T12:37:37.485Z",
+      "updated_at": "2026-10-02T12:37:37.485Z"
+    },
+    {
+      "name": "Hacker User",
+      "email": "hack_1790944657@mail.com",
+      "password_hash": "$2b$10$GQAZuyr1rLqV5f5zqgLiU.bXiT7RSzCBrg4aab6ZiR6uzqzRrd5bi",
+      "role": "CUSTOMER",
+      "status": "ACTIVE",
+      "id": "usr-1790944657869-p3ltr",
+      "created_at": "2026-10-02T12:37:37.869Z",
+      "updated_at": "2026-10-02T12:37:37.869Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-ml-01",
+      "name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+      "game": "Mobile Legends",
+      "category": "cat-mlbb",
+      "price": 850000,
+      "discount_price": 750000,
+      "stock": 1,
+      "description": "Akun pribadi tangan pertama, all unbind bebas ganti email Moonton. Total 345 skin, 4 Skin Collector (Chou, Gusion, Balmond, Nana), 12 Epic Limited, KOF Iori Yagami, Winrate Ranked 68.4%. Siap tempur turnamen.",
+      "account_details": "Login Moonton Email: mlbb.chou.pro@mail.com | Pass: VortexML@2026# | Status: All Unbind Bersih (GP/FB/VK kosong)",
+      "rank": "Mythical Glory 85★",
+      "level": "Level 112",
+      "skins": "345 Skins (4 Collector, 12 Epic Limited, 3 KOF)",
+      "items": "Emblem All Max Lv 60, BP 250.000, Magic Dust 14.000",
+      "status": "AVAILABLE",
+      "is_archived": false,
+      "images": [
+        {
+          "id": "img-ml-1",
+          "product_id": "prod-ml-01",
+          "url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 0,
+          "is_primary": true
+        },
+        {
+          "id": "img-ml-2",
+          "product_id": "prod-ml-01",
+          "url": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 1,
+          "is_primary": false
+        },
+        {
+          "id": "img-ml-3",
+          "product_id": "prod-ml-01",
+          "url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 2,
+          "is_primary": false
+        }
+      ],
+      "created_at": "2026-10-02T09:24:11.291Z",
+      "updated_at": "2026-10-02T12:38:15.614Z"
+    },
+    {
+      "id": "prod-val-01",
+      "name": "Valorant Immortal 3 - Vandal Kuronami, Reaver, Araxys & Champions 2023",
+      "game": "Valorant",
+      "category": "cat-val",
+      "price": 1450000,
+      "discount_price": 1290000,
+      "stock": 1,
+      "description": "Akun server APAC / Indonesia. Region Indo asli bukan turki/argentina. Full skin Vandal meta, Phantom Oni + Recon, Karambit Champions 2023, Reaver Knife. Peak Immortal 3 (310 RR). Email pertama (OGE) disertakan.",
+      "account_details": "Riot ID: VORTEX_SHADOW#APAC | Email OGE: val.shadow@mail.com | Pass: Valorant2026!# | 2FA Ready to Transfer",
+      "rank": "Immortal 3 (310 RR)",
+      "level": "Level 215",
+      "skins": "Vandal Kuronami (Max), Champions 2023 Vandal & Melee, Phantom Oni",
+      "items": "450 Radianite Points, 1.250 VP sisa, Battlepass S4-S7 Max",
+      "status": "AVAILABLE",
+      "is_archived": false,
+      "images": [
+        {
+          "id": "img-val-1",
+          "product_id": "prod-val-01",
+          "url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 0,
+          "is_primary": true
+        },
+        {
+          "id": "img-val-2",
+          "product_id": "prod-val-01",
+          "url": "https://images.unsplash.com/photo-1552824722-ddab1374e622?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 1,
+          "is_primary": false
+        }
+      ],
+      "created_at": "2026-10-02T09:24:11.291Z",
+      "updated_at": "2026-10-02T09:24:11.291Z"
+    },
+    {
+      "id": "prod-ff-01",
+      "name": "Free Fire Old Season 2 - Bundle Hip Hop & Elite Pass S2-S15 Lengkap",
+      "game": "Free Fire",
+      "category": "cat-ff",
+      "price": 950000,
+      "discount_price": 890000,
+      "stock": 1,
+      "description": "Akun Old langka sejak era 2018. Koleksi Bundle Hip Hop, Breakdance, Sakura badge aktif, SG OPM Lv 7 Max, AK Dragon Blue Flame Max. Login FB nonaktif, diganti ke akun Google fresh aman garansi.",
+      "account_details": "Login Gmail Fresh: ff.hiphop.old@gmail.com | Password: FreeFireOld2026@ | Backup Code disertakan",
+      "rank": "Master 4.200 Point",
+      "level": "Level 78",
+      "skins": "Bundle Hip Hop S2, Sakura S1 Badge, SG OPM Max, AK Dragon Max",
+      "items": "Diamond 850, Magic Cube 4 pcs, Custom Room Card x45",
+      "status": "AVAILABLE",
+      "is_archived": false,
+      "images": [
+        {
+          "id": "img-ff-1",
+          "product_id": "prod-ff-01",
+          "url": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 0,
+          "is_primary": true
+        }
+      ],
+      "created_at": "2026-10-02T09:24:11.291Z",
+      "updated_at": "2026-10-02T09:24:11.291Z"
+    },
+    {
+      "id": "prod-genshin-01",
+      "name": "Genshin Impact AR 60 Sultan - C6 Furina + Signature, Raiden C3 + EL R2",
+      "game": "Genshin Impact",
+      "category": "cat-genshin",
+      "price": 2100000,
+      "discount_price": 1850000,
+      "stock": 1,
+      "description": "Akun Server Asia AR 60 End Game. Total 38 Karakter Bintang 5! C6 Furina + Splendor of Tranquil Waters, C3 Raiden Shogun + Engulfing Lightning R2, C2 Nahida, Neuvillette C1 + R1. Artefak god-tier 40+ CV banyak. No deadlink, email bisa diganti langsung.",
+      "account_details": "Hoyoverse Username teratur | Email: genshin.asia.furina@mail.com | Pass: GenshinImpact2026# | Clean device binding",
+      "rank": "Adventure Rank 60 (World Lv 9)",
+      "level": "AR 60 Max",
+      "skins": "Ayaka Springbloom, Diluc Red Dead of Night, Jean Sea Breeze",
+      "items": "Primogems 12.400, Intertwined Fate 24, Mora 45.000.000",
+      "status": "AVAILABLE",
+      "is_archived": false,
+      "images": [
+        {
+          "id": "img-genshin-1",
+          "product_id": "prod-genshin-01",
+          "url": "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80",
+          "sort_order": 0,
+          "is_primary": true
+        }
+      ],
+      "created_at": "2026-10-02T09:24:11.291Z",
+      "updated_at": "2026-10-02T09:24:11.291Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-mlbb",
+      "name": "Mobile Legends",
+      "slug": "mobile-legends",
+      "game": "Mobile Legends",
+      "icon": "Gamepad2"
+    },
+    {
+      "id": "cat-ff",
+      "name": "Free Fire",
+      "slug": "free-fire",
+      "game": "Free Fire",
+      "icon": "Flame"
+    },
+    {
+      "id": "cat-val",
+      "name": "Valorant",
+      "slug": "valorant",
+      "game": "Valorant",
+      "icon": "Crosshair"
+    },
+    {
+      "id": "cat-genshin",
+      "name": "Genshin Impact",
+      "slug": "genshin-impact",
+      "game": "Genshin Impact",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "cat-pubg",
+      "name": "PUBG Mobile",
+      "slug": "pubg-mobile",
+      "game": "PUBG Mobile",
+      "icon": "Shield"
+    },
+    {
+      "id": "cat-roblox",
+      "name": "Roblox",
+      "slug": "roblox",
+      "game": "Roblox",
+      "icon": "Box"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1790944695530-cdbc7",
+      "order_number": "ORD-20261002-000003",
+      "invoice_number": "VTX-20261002-000003",
+      "user_id": "usr-cust-01",
+      "customer_name": "Rian Pratama",
+      "customer_email": "customer@vortex.id",
+      "customer_phone": "085819822250",
+      "subtotal": 750000,
+      "discount_amount": 30000,
+      "voucher_amount": 50000,
+      "total": 670000,
+      "voucher_code": "VORTEX10",
+      "payment_method": "QRIS",
+      "payment_status": "UNPAID",
+      "order_status": "CANCELLED",
+      "delivered_credentials": "[Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion]:\nLogin Moonton Email: mlbb.chou.pro@mail.com | Pass: VortexML@2026# | Status: All Unbind Bersih (GP/FB/VK kosong)",
+      "created_at": "2026-10-02T12:38:15.530Z",
+      "updated_at": "2026-10-02T12:38:15.614Z",
+      "items": [
+        {
+          "id": "item-1790944695530-5any",
+          "order_id": "ord-1790944695530-cdbc7",
+          "product_id": "prod-ml-01",
+          "product_name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+          "product_game": "Mobile Legends",
+          "price": 750000,
+          "quantity": 1,
+          "product_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "cancellation_reason": "Pre-deployment test cancellation",
+      "cancelled_by": "Super Admin Vortex",
+      "cancelled_at": "2026-10-02T12:38:15.614Z"
+    },
+    {
+      "id": "ord-1790943657009-em187",
+      "order_number": "ORD-20261002-000002",
+      "invoice_number": "VTX-20261002-000002",
+      "user_id": "usr-cust-01",
+      "customer_name": "Rian Pratama",
+      "customer_email": "customer@vortex.id",
+      "customer_phone": "081234567890",
+      "subtotal": 750000,
+      "discount_amount": 30000,
+      "voucher_amount": 0,
+      "total": 720000,
+      "payment_method": "QRIS",
+      "payment_status": "PAID",
+      "order_status": "COMPLETED",
+      "notes": "",
+      "delivered_credentials": "[Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion]:\nLogin Moonton Email: mlbb.chou.pro@mail.com | Pass: VortexML@2026# | Status: All Unbind Bersih (GP/FB/VK kosong)",
+      "created_at": "2026-10-02T12:20:57.009Z",
+      "updated_at": "2026-10-02T12:21:58.762Z",
+      "items": [
+        {
+          "id": "item-1790943657009-d6oh",
+          "order_id": "ord-1790943657009-em187",
+          "product_id": "prod-ml-01",
+          "product_name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+          "product_game": "Mobile Legends",
+          "price": 750000,
+          "quantity": 1,
+          "product_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    },
+    {
+      "id": "ord-1790933071836-1nyik",
+      "order_number": "ORD-20261002-000001",
+      "invoice_number": "VTX-20261002-000001",
+      "user_id": "usr-cust-01",
+      "customer_name": "Rian Pratama",
+      "customer_email": "customer@vortex.id",
+      "customer_phone": "085819822250",
+      "subtotal": 750000,
+      "discount_amount": 30000,
+      "voucher_amount": 50000,
+      "total": 670000,
+      "voucher_code": "VORTEX10",
+      "payment_method": "QRIS",
+      "payment_status": "UNPAID",
+      "order_status": "CANCELLED",
+      "delivered_credentials": "[Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion]:\nLogin Moonton Email: mlbb.chou.pro@mail.com | Pass: VortexML@2026# | Status: All Unbind Bersih (GP/FB/VK kosong)",
+      "created_at": "2026-10-02T09:24:31.836Z",
+      "updated_at": "2026-10-02T09:24:31.881Z",
+      "items": [
+        {
+          "id": "item-1790933071836-nzhi",
+          "order_id": "ord-1790933071836-1nyik",
+          "product_id": "prod-ml-01",
+          "product_name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+          "product_game": "Mobile Legends",
+          "price": 750000,
+          "quantity": 1,
+          "product_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "cancellation_reason": "Uji coba pembatalan otomatis",
+      "cancelled_by": "Super Admin Vortex",
+      "cancelled_at": "2026-10-02T09:24:31.881Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1790944695530-hx1y",
+      "order_id": "ord-1790944695530-cdbc7",
+      "method": "QRIS",
+      "amount": 670000,
+      "status": "REFUNDED",
+      "qris_url": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021126590013ID.VORTEX.WWW0118936009110858198222505204581253033605802ID5909VORTEX%20ID6007JAKARTA61051294062070703A016304E1F8",
+      "created_at": "2026-10-02T12:38:15.530Z"
+    },
+    {
+      "id": "pay-1790943657009-enuf",
+      "order_id": "ord-1790943657009-em187",
+      "method": "QRIS",
+      "amount": 720000,
+      "status": "PAID",
+      "qris_url": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021126590013ID.VORTEX.WWW0118936009110858198222505204581253033605802ID5909VORTEX%20ID6007JAKARTA61051294062070703A016304E1F8",
+      "created_at": "2026-10-02T12:20:57.009Z"
+    },
+    {
+      "id": "pay-1790933071836-4r3v",
+      "order_id": "ord-1790933071836-1nyik",
+      "method": "QRIS",
+      "amount": 670000,
+      "status": "REFUNDED",
+      "qris_url": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021126590013ID.VORTEX.WWW0118936009110858198222505204581253033605802ID5909VORTEX%20ID6007JAKARTA61051294062070703A016304E1F8",
+      "created_at": "2026-10-02T09:24:31.836Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-1790944695530-xgx7",
+      "invoice_number": "VTX-20261002-000003",
+      "order_id": "ord-1790944695530-cdbc7",
+      "user_id": "usr-cust-01",
+      "customer_name": "Rian Pratama",
+      "customer_email": "customer@vortex.id",
+      "customer_phone": "085819822250",
+      "subtotal": 750000,
+      "discount_amount": 30000,
+      "voucher_amount": 50000,
+      "total": 670000,
+      "payment_method": "QRIS",
+      "order_status": "CANCELLED",
+      "payment_status": "UNPAID",
+      "items": [
+        {
+          "id": "item-1790944695530-5any",
+          "order_id": "ord-1790944695530-cdbc7",
+          "product_id": "prod-ml-01",
+          "product_name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+          "product_game": "Mobile Legends",
+          "price": 750000,
+          "quantity": 1,
+          "product_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "created_at": "2026-10-02T12:38:15.530Z"
+    },
+    {
+      "id": "inv-1790943657009-b4y0",
+      "invoice_number": "VTX-20261002-000002",
+      "order_id": "ord-1790943657009-em187",
+      "user_id": "usr-cust-01",
+      "customer_name": "Rian Pratama",
+      "customer_email": "customer@vortex.id",
+      "customer_phone": "081234567890",
+      "subtotal": 750000,
+      "discount_amount": 30000,
+      "voucher_amount": 0,
+      "total": 720000,
+      "payment_method": "QRIS",
+      "order_status": "COMPLETED",
+      "payment_status": "PAID",
+      "items": [
+        {
+          "id": "item-1790943657009-d6oh",
+          "order_id": "ord-1790943657009-em187",
+          "product_id": "prod-ml-01",
+          "product_name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+          "product_game": "Mobile Legends",
+          "price": 750000,
+          "quantity": 1,
+          "product_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "created_at": "2026-10-02T12:20:57.009Z"
+    },
+    {
+      "id": "inv-1790933071836-jx60",
+      "invoice_number": "VTX-20261002-000001",
+      "order_id": "ord-1790933071836-1nyik",
+      "user_id": "usr-cust-01",
+      "customer_name": "Rian Pratama",
+      "customer_email": "customer@vortex.id",
+      "customer_phone": "085819822250",
+      "subtotal": 750000,
+      "discount_amount": 30000,
+      "voucher_amount": 50000,
+      "total": 670000,
+      "payment_method": "QRIS",
+      "order_status": "CANCELLED",
+      "payment_status": "UNPAID",
+      "items": [
+        {
+          "id": "item-1790933071836-nzhi",
+          "order_id": "ord-1790933071836-1nyik",
+          "product_id": "prod-ml-01",
+          "product_name": "Akun MLBB Mythical Glory 85★ - Skin Collector Chou & Gusion",
+          "product_game": "Mobile Legends",
+          "price": 750000,
+          "quantity": 1,
+          "product_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "created_at": "2026-10-02T09:24:31.836Z"
+    }
+  ],
+  "vouchers": [
+    {
+      "id": "vouch-1",
+      "code": "VORTEX10",
+      "discount_type": "PERCENTAGE",
+      "discount_value": 10,
+      "min_purchase": 100000,
+      "max_discount": 50000,
+      "usage_limit": 100,
+      "used_count": 0,
+      "per_user_limit": 1,
+      "valid_from": "2025-01-01T00:00:00.000Z",
+      "valid_until": "2030-12-31T23:59:59.000Z",
+      "is_active": true,
+      "created_at": "2026-10-02T09:24:11.052Z"
+    },
+    {
+      "id": "vouch-2",
+      "code": "VORTEXNEW",
+      "discount_type": "FIXED",
+      "discount_value": 25000,
+      "min_purchase": 150000,
+      "max_discount": 25000,
+      "usage_limit": 200,
+      "used_count": 0,
+      "per_user_limit": 1,
+      "valid_from": "2025-01-01T00:00:00.000Z",
+      "valid_until": "2030-12-31T23:59:59.000Z",
+      "is_active": true,
+      "created_at": "2026-10-02T09:24:11.052Z"
+    }
+  ],
+  "voucher_usages": [],
+  "discounts": [
+    {
+      "id": "disc-1",
+      "name": "Promo Grand Opening 5%",
+      "discount_type": "PERCENTAGE",
+      "discount_value": 5,
+      "min_purchase": 50000,
+      "max_discount": 30000,
+      "target_type": "ALL",
+      "start_date": "2025-01-01T00:00:00.000Z",
+      "end_date": "2030-12-31T23:59:59.000Z",
+      "is_active": true
+    }
+  ],
+  "ratings": [],
+  "service_reviews": [
+    {
+      "id": "srv-1790943813225-58c2",
+      "user_id": "usr-cust-01",
+      "order_id": "ord-1790943657009-em187",
+      "user_name": "Rian Pratama",
+      "rating": 5,
+      "comment": "mantab",
+      "is_hidden": false,
+      "created_at": "2026-10-02T12:23:33.225Z"
+    }
+  ],
+  "store_settings": {
+    "id": "store-settings-1",
+    "store_name": "Vortex ID",
+    "tagline": "Beli Aman, Main Nyaman.",
+    "phone": "085819822250",
+    "whatsapp_number": "085819822250",
+    "whatsapp_link_number": "6285819822250",
+    "whatsapp_default_message": "Halo Vortex ID, saya ingin bertanya mengenai produk.",
+    "logo_url": "",
+    "favicon_url": "",
+    "terms_conditions": "1. Seluruh transaksi jual beli akun gaming di Vortex ID tunduk pada ketentuan hukum yang berlaku serta persetujuan kedua belah pihak.\n2. Vortex ID menjamin keabsahan dan keaslian data akun sesuai dengan deskripsi spesifikasi produk.\n3. Pembeli wajib melakukan pengecekan dan penggantian data keamanan akun (email, password, 2FA) maksimal 1x24 jam setelah data akun diserahkan.\n4. Garansi anti-hackback berlaku sesuai masa garansi toko (30 hari garansi penuh atau uang kembali sesuai kebijakan garansi).\n5. Pembeli setuju untuk tidak menyalahgunakan akun yang dibeli untuk aktivitas ilegal, cheat, atau modifikasi ilegal.",
+    "refund_policy": "1. Refund dana 100% diproses jika akun tidak sesuai dengan deskripsi dan belum diubah datanya oleh pembeli.\n2. Pengajuan refund wajib menyertakan bukti screenshot/video unboxing akun tanpa jeda.\n3. Proses klaim garansi atau refund diproses maksimal 1x24 jam oleh tim admin Vortex ID.",
+    "cancellation_policy": "1. Pesanan yang berstatus PENDING dapat dibatalkan sewaktu-waktu sebelum pembayaran diverifikasi.\n2. Pesanan yang sudah berstatus PAID atau COMPLETED hanya dapat dibatalkan melalui persetujuan admin setelah evaluasi teknis.",
+    "gaming_disclaimer": "PEMBERITAHUAN PENTING:\nSetiap game dan platform memiliki Syarat & Ketentuan (Terms of Service) tersendiri terkait kepemilikan dan pengalihan akun. Vortex ID bertindak sebagai fasilitator perantara verifikasi data demi keamanan kedua belah pihak. Pengguna disarankan membaca dan memahami kebijakan pengembang game masing-masing sebelum bertransaksi.",
+    "updated_at": "2026-10-02T09:24:11.052Z"
+  },
+  "theme_settings": {
+    "id": "theme-settings-1",
+    "theme_mode": "DARK",
+    "primary_color": "#00f0ff",
+    "secondary_color": "#3b82f6",
+    "background_color": "#080c14",
+    "text_color": "#f8fafc",
+    "button_color": "#00f0ff",
+    "accent_color": "#06b6d4",
+    "banner_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80",
+    "banner_title": "MARKETPLACE AKUN GAMING TERPERCAYA",
+    "banner_subtitle": "Beli Aman, Main Nyaman. Transaksi Instan, Garansi Penuh, & Verifikasi Data 100%.",
+    "updated_at": "2026-10-02T09:24:11.052Z"
+  },
+  "qris_settings": {
+    "id": "qris-settings-1",
+    "is_active": true,
+    "image_url": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021126590013ID.VORTEX.WWW0118936009110858198222505204581253033605802ID5909VORTEX%20ID6007JAKARTA61051294062070703A016304E1F8",
+    "account_name": "VORTEX ID - OFFICIAL STORE",
+    "nmid": "ID10202619822250",
+    "updated_at": "2026-10-02T09:24:11.052Z"
+  },
+  "email_logs": [
+    {
+      "id": "eml-1790944396559-zcj6",
+      "recipient": "nocturnalengine08@gmail.com",
+      "subject": "[Vortex ID] Uji Coba Integrasi Resend Berhasil",
+      "status": "SENT",
+      "created_at": "2026-10-02T12:33:16.559Z"
+    },
+    {
+      "id": "eml-1790944368203-gpbn",
+      "recipient": "urbanharvest25@gmail.com",
+      "subject": "[Vortex ID] Uji Coba Integrasi Resend Berhasil",
+      "status": "FAILED",
+      "error_message": "You can only send testing emails to your own email address (nocturnalengine08@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.",
+      "created_at": "2026-10-02T12:32:48.203Z"
+    },
+    {
+      "id": "eml-1790943657365-4fev",
+      "recipient": "customer@vortex.id",
+      "subject": "[Vortex ID] Nota Pesanan #VTX-20261002-000002 - Rian Pratama",
+      "status": "FAILED",
+      "error_message": "You can only send testing emails to your own email address (nocturnalengine08@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.",
+      "order_id": "ord-1790943657009-em187",
+      "created_at": "2026-10-02T12:20:57.365Z"
+    },
+    {
+      "id": "eml-1790933071837-zr7x",
+      "recipient": "customer@vortex.id",
+      "subject": "[Vortex ID] Nota Pesanan #VTX-20261002-000001 - Rian Pratama",
+      "status": "FAILED",
+      "error_message": "Email provider belum dikonfigurasi di environment variable (EMAIL_PROVIDER dan EMAIL_API_KEY masih kosong).",
+      "order_id": "ord-1790933071836-1nyik",
+      "created_at": "2026-10-02T09:24:31.837Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "audit-1790944695615-9fqiy",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "CANCEL_TRANSACTION",
+      "target": "ord-1790944695530-cdbc7",
+      "metadata": {
+        "reason": "Pre-deployment test cancellation",
+        "restoredStock": true
+      },
+      "created_at": "2026-10-02T12:38:15.615Z"
+    },
+    {
+      "id": "audit-1790944695507-69iqe",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "nocturnalengine08@gmail.com"
+      },
+      "created_at": "2026-10-02T12:38:15.507Z"
+    },
+    {
+      "id": "audit-1790944657625-guy51",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "nocturnalengine08@gmail.com"
+      },
+      "created_at": "2026-10-02T12:37:37.625Z"
+    },
+    {
+      "id": "audit-1790944401441-d8rws",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "nocturnalengine08@gmail.com"
+      },
+      "created_at": "2026-10-02T12:33:21.441Z"
+    },
+    {
+      "id": "audit-1790944396074-rxwvi",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "nocturnalengine08@gmail.com"
+      },
+      "created_at": "2026-10-02T12:33:16.074Z"
+    },
+    {
+      "id": "audit-1790944367774-oez9r",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "urbanharvest25@gmail.com"
+      },
+      "created_at": "2026-10-02T12:32:47.774Z"
+    },
+    {
+      "id": "audit-1790943718762-xdggv",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "UPDATE_ORDER_STATUS",
+      "target": "ord-1790943657009-em187",
+      "metadata": {
+        "order_status": "COMPLETED"
+      },
+      "created_at": "2026-10-02T12:21:58.762Z"
+    },
+    {
+      "id": "audit-1790943705942-la541",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "admin@vortex.id"
+      },
+      "created_at": "2026-10-02T12:21:45.942Z"
+    },
+    {
+      "id": "audit-1790933082350-vyrda",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "admin@vortex.id"
+      },
+      "created_at": "2026-10-02T09:24:42.350Z"
+    },
+    {
+      "id": "audit-1790933071882-2zyha",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "CANCEL_TRANSACTION",
+      "target": "ord-1790933071836-1nyik",
+      "metadata": {
+        "reason": "Uji coba pembatalan otomatis",
+        "restoredStock": true
+      },
+      "created_at": "2026-10-02T09:24:31.882Z"
+    },
+    {
+      "id": "audit-1790933071709-1vy7i",
+      "admin_id": "usr-admin-01",
+      "admin_name": "Super Admin Vortex",
+      "action": "ADMIN_LOGIN",
+      "target": "AUTH",
+      "metadata": {
+        "email": "admin@vortex.id"
+      },
+      "created_at": "2026-10-02T09:24:31.709Z"
+    }
+  ],
+  "product_views": [
+    {
+      "id": "view-1790944695636-ntbm",
+      "product_id": "prod-ml-01",
+      "viewed_at": "2026-10-02T12:38:15.636Z"
+    }
+  ]
+}

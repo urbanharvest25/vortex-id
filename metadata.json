@@ -1,0 +1,6 @@
+{
+  "name": "Vortex ID - Marketplace JB Akun Gaming",
+  "description": "Beli Aman, Main Nyaman. Marketplace jual beli akun gaming terpercaya, cepat, dan aman.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
