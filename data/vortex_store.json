@@ -545,6 +545,15 @@
   },
   "email_logs": [
     {
+      "id": "eml-1790944695946-yv6p",
+      "recipient": "customer@vortex.id",
+      "subject": "[Vortex ID] Nota Pesanan #VTX-20261002-000003 - Rian Pratama",
+      "status": "FAILED",
+      "error_message": "You can only send testing emails to your own email address (nocturnalengine08@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.",
+      "order_id": "ord-1790944695530-cdbc7",
+      "created_at": "2026-10-02T12:38:15.946Z"
+    },
+    {
       "id": "eml-1790944396559-zcj6",
       "recipient": "nocturnalengine08@gmail.com",
       "subject": "[Vortex ID] Uji Coba Integrasi Resend Berhasil",

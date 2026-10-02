@@ -45,7 +45,8 @@ interface DatabaseSchema {
   product_views: ProductView[];
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.NOW_REGION);
+const DATA_DIR = isServerless ? path.join('/tmp', 'vortex_data') : path.resolve(process.cwd(), 'data');
 const DB_FILE = path.join(DATA_DIR, 'vortex_store.json');
 
 class Database {
@@ -177,13 +178,27 @@ Setiap game dan platform memiliki Syarat & Ketentuan (Terms of Service) tersendi
   public init() {
     if (this.isInitialized) return;
 
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
+    try {
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+    } catch (err) {
+      console.warn('Warning: Could not create DATA_DIR:', DATA_DIR, err);
     }
 
-    if (fs.existsSync(DB_FILE)) {
+    const seedFile = path.resolve(process.cwd(), 'data', 'vortex_store.json');
+    if (isServerless && !fs.existsSync(DB_FILE) && fs.existsSync(seedFile)) {
       try {
-        const raw = fs.readFileSync(DB_FILE, 'utf-8');
+        fs.copyFileSync(seedFile, DB_FILE);
+      } catch (err) {
+        console.warn('Could not copy seed file to /tmp, will read seed directly:', err);
+      }
+    }
+
+    const fileToLoad = fs.existsSync(DB_FILE) ? DB_FILE : (fs.existsSync(seedFile) ? seedFile : null);
+    if (fileToLoad) {
+      try {
+        const raw = fs.readFileSync(fileToLoad, 'utf-8');
         const parsed = JSON.parse(raw);
         this.data = {
           ...this.getDefaultSchema(),
@@ -392,6 +407,9 @@ Setiap game dan platform memiliki Syarat & Ketentuan (Terms of Service) tersendi
 
   private save() {
     try {
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
       const tmpFile = `${DB_FILE}.tmp`;
       fs.writeFileSync(tmpFile, JSON.stringify(this.data, null, 2), 'utf-8');
       fs.renameSync(tmpFile, DB_FILE);

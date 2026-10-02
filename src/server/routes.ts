@@ -76,7 +76,8 @@ apiRouter.post('/auth/register', (req: Request, res: Response) => {
       user: safeUser,
     });
   } catch (err: any) {
-    return res.status(500).json({ error: 'Maaf, terjadi kesalahan. Silakan coba lagi.' });
+    console.error('[Registration Server Error]:', err?.message || err);
+    return res.status(500).json({ error: 'Maaf, terjadi kesalahan pada server saat registrasi. Silakan coba lagi.' });
   }
 });
 
